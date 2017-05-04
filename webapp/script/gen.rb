@@ -274,10 +274,10 @@ class Command < Thor
   def db
     return @client if @client
     @client = Mysql2::Client.new(
-      host: 'localhost',
+      host: 'isucon5q-crystal-mysql',
       port: nil,
       username: 'root',
-      password: nil,
+      password: 'root',
       database: 'isucon5q',
       encoding: 'utf8mb4',
       reconnect: true,
